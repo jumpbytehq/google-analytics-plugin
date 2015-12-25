@@ -80,7 +80,8 @@
 
     <source-file src="android/GoogleAnalyticsPlugin.java" target-dir="src/com/cmackay/plugins/googleanalytics" />
 
-    <framework src="com.google.android.gms:play-services-analytics:+" />
+    <!--<framework src="com.google.android.gms:play-services-analytics:+" />-->
+    <framework src="play-services-analytics-exclude-sup-v4.gradle" custom="true" type="gradleReference" />
 
     <proguard-config>
 -keep class * extends java.util.ListResourceBundle {
